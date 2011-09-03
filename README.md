@@ -1,5 +1,5 @@
 #treetop.vim
-Syntax highlighting for treetop files.
+Syntax highlighting and snippets for treetop files.
 
 
 ##Install
