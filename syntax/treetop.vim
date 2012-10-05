@@ -12,7 +12,7 @@ syntax match ttTag /\w\+\%(:\)/
 syntax include @Ruby syntax/ruby.vim
 syntax region BlockRuby matchgroup=ttQuote start=/{/ end=/^\s*}$/ transparent contains=@Ruby
 
-syntax region ttPattern matchgroup=ttQuote start=/\[/ end=/\]/
+syntax region ttPattern matchgroup=ttQuote start=/\[/ end=/\]/ contains=rubyStringEscape,rubyRegexpEscape,rubyRegexpCharClass oneline
 syntax region ttString  matchgroup=ttQuote start=/'/  end=/'/
 syntax region ttString  matchgroup=ttQuote start=/"/  end=/"/
 syntax region ttClass   matchgroup=ttQuote start=/</  end=/>/
